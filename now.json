@@ -1,0 +1,15 @@
+{
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/next"
+        }
+    ],
+    "build": {
+        "env": {
+            "WMATA_API_KEY": "@wmata-api-key"
+        }
+    },
+    "name": "better-bus",
+    "version": 2
+}

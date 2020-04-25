@@ -1,0 +1,29 @@
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+  }
+  
+  /*
+    WAT IS THIS?!
+    We inherit box-sizing: border-box; from our <html> selector
+    Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+  */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      padding: 0;
+      margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  margin: 0 0 5px 0;
+  }

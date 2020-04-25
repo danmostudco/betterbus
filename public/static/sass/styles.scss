@@ -1,0 +1,67 @@
+@import '_reset';
+@import '_mixins';
+@import 'exploremap.scss';
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+$mobile-break-point: 675px;
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+// TITLE BAR
+.titlebar {
+    width: 900px;
+    max-width: calc(100% - 64px);
+    position: relative;
+    z-index: 100;
+    flex-direction: column;
+    color: white;
+    margin: 40px auto 10px;
+
+    h1 {
+        padding: 0;
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 3rem;
+        // make text larger at certain break point
+        @media(min-width: $mobile-break-point + 1) {
+            font-size: 4rem;
+        }
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+// FOOTER BAR
+.site-footer {
+    border-top: 2px solid #1f364d;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin-top: auto;
+    text-align: left;
+    display: none;
+}
+
+// BACKGROUND STRIPE
+.stripes {
+    top: 0;
+    display: grid;
+    grid: repeat(5, 200px) / repeat(10, 1fr);
+    transform: skewY(-12deg);
+    transform-origin: 0;
+    background-image: linear-gradient(to right bottom, rgb(255, 95, 109), rgb(255, 195, 113));
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+}
