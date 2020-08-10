@@ -148,8 +148,8 @@ const SearchBar = (props) => {
   const DataList = () => {
     return (
       <datalist id="routes">
-        {routeNames.map((route) => (
-          <option>{route}</option>
+        {routeNames.map((route, index) => (
+          <option key={index}>{route}</option>
         ))}
       </datalist>
     );
