@@ -16,7 +16,7 @@ const Home = (props) => (
   // so no div is required
   <CSSTransition in={true} appear={true} timeout={1200} classNames="fade">
     <RouteProvider>
-      <div className="exploremap" tabindex="0">
+      <div className="exploremap" tabIndex="0">
         <div className="titlebar">
           <h1>Better Bus</h1>
           <p>See where the bus can take you. Easily.</p>

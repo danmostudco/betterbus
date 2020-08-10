@@ -21,7 +21,7 @@ class MyApp extends App {
     const date = "2020-04-19";
 
     return (
-      <Container>
+      <>
         <Head>
           <title>{title}</title>
           <meta charSet="utf-8" />
@@ -95,7 +95,7 @@ class MyApp extends App {
           <meta content="@danmostudco" name="twitter:creator" />
         </Head>
         <Component {...pageProps} />
-      </Container>
+      </>
     );
   }
 }
