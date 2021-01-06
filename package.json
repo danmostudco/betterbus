@@ -14,7 +14,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.3.5",
